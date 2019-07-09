@@ -20,7 +20,7 @@ variable "name" {
 
 module "elb" {
   source  = "app.terraform.io/jlinn/consumer-elb/aws"
-  version = "1.9"
+  version = "1.0"
   name = "${var.name}-elb"
   
   # ELB attachments
@@ -30,7 +30,7 @@ module "elb" {
   
 module "ec2_instances" {
   source = "app.terraform.io/jlinn/consumer-ec2-instance/aws"
-  version = "1.4"
+  version = "1.0"
   name                        = "${var.name}-ec2"
   instance_count = "${var.number_of_instances}"
 }
