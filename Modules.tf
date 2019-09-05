@@ -2,7 +2,7 @@ module "consumer_ec2_instance_1" {
   source  = "app.terraform.io/jlinn/consumer-ec2-instance-1/aws"
   version = "1.0.0"
 
-  instance_count = 1
+  instance_count = 4
   name = "app1"
 }
 
