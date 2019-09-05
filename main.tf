@@ -32,8 +32,8 @@ resource "aws_instance" "web" {
   subnet_id = "${data.terraform_remote_state.network.development_subnet_id}"
 
   tags {
-    Name = "ProdCon Instance"
-    owner = "Solutions Engineer"
+    Name = "jlinn-ProdConDemo"
+    owner = "jlinn"
     ttl = "1"
   }
 }
