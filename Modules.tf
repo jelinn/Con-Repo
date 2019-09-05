@@ -3,7 +3,7 @@ module "consumer_ec2_instance_1" {
   version = "1.0.0"
 
   instance_count = 4
-  name = "app1"
+  name = "App1"
 }
 
 /*module "consumer_elb_1" {
