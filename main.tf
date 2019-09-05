@@ -1,9 +1,9 @@
 data "terraform_remote_state" "network" {
   backend = "atlas"
 
-  config {
+#  config {
     name = "${var.org}/${var.workspace_name}"
-  }
+#  }
 }
 
 provider "aws" {
