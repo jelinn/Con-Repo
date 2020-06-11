@@ -1,5 +1,5 @@
 module "consumer_ec2_instance" {
-  source  = "app.terraform.io/jlorg/consumer-ec2-instance/aws"
+  source  = "app.terraform.io/jlinn/consumer-ec2-instance/aws"
   version = "1.0.1"
 
   instance_count = 4
@@ -7,7 +7,7 @@ module "consumer_ec2_instance" {
 }
 
 module "consumer_elb" {
-  source  = "app.terraform.io/jlorg/consumer-elb/aws"
+  source  = "app.terraform.io/jlinn/consumer-elb/aws"
   version = "1.0.1"
 
   environment = "dev"
