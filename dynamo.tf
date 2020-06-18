@@ -12,7 +12,7 @@ module "consumer_elb_1" {
   version = "1.0.0"
 
   environment = "dev"
-  instances = "${module.consumer_ec2_instance_1.id"}
+  instances = "${module.consumer_ec2_instance_1.id}"
   name = "app1"
   number_of_instances = 2
 }
